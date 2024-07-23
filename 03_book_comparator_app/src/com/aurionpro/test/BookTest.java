@@ -18,7 +18,29 @@ public class BookTest {
 		
 		createListOfBooks(books,scanner);
 		
+		
+		
 		System.out.println("List of books created: \n");
+		displayListOfBooks(books);
+		
+		Collections.sort(books,new BookComparator.BookTitleComparator());
+		
+		System.out.println("\nAfter Sorting Base on title\n");
+		displayListOfBooks(books);
+		
+		Collections.sort(books,new BookComparator.BookAuthorComparator());
+		
+		System.out.println("\nAfter Sorting Base on author\n");
+		displayListOfBooks(books);
+		
+		Collections.sort(books,new BookComparator.BookPriceComparator());
+		
+		System.out.println("\nAfter Sorting Base on price\n");
+		displayListOfBooks(books);
+		
+		Collections.sort(books,new BookComparator.BookPublicationYearComparator());
+		
+		System.out.println("\nAfter Sorting Base on publication year\n");
 		displayListOfBooks(books);
 		
 		sortBooksAuthorTitlePrice(books);

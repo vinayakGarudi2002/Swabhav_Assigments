@@ -16,14 +16,7 @@ public class BookTest {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		//createListOfBooks(books,scanner);
-		
-		books.add(new Book("vinayak","man",190,2020));
-		books.add(new Book("vinayak","shamas",900,2022));
-		books.add(new Book("vinayak","shamas",700,2022));
-		books.add(new Book("vinayak","shamas",700,2022));
-		books.add(new Book("rohan","shamas",700,2022));
-		books.add(new Book("sham","mybook",730,2024));
+		createListOfBooks(books,scanner);
 		
 		System.out.println("List of books created: \n");
 		displayListOfBooks(books);
